@@ -1,0 +1,13 @@
+n=int(input("Enter the  number: "))
+a=len(str(n))
+temp=n
+sum=0
+while temp>0:
+    rem=temp%10
+    sum=sum+(rem**a)
+    temp=temp//10
+if n==sum:
+    print("The given number is Armstrong")
+else:
+    print("The given number is not Armstrong")
+    

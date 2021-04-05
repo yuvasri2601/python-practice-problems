@@ -1,0 +1,3 @@
+n=input("Enter the alphabet: ")
+if ((n>='a' and n<='z') or (n>='A' and n<='Z')):
+    print(n,"is a alphabet")

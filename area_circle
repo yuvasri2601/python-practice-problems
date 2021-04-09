@@ -1,0 +1,5 @@
+def area_circle(r):
+  pi=3.14
+  area_cir=pi*r*r
+  print(area_cir)
+area_circle(2)

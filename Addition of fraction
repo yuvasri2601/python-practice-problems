@@ -1,0 +1,12 @@
+num1=int(input("Enter the first numerator: "))
+deno1=int(input("Enter the first denominator: "))
+num2=int(input("Enter the second numerator: "))
+deno2=int(input("Enter the second denominator: "))
+if deno1==deno2:
+  a=num1+num2
+  b=a/deno1;
+  print(str(a)+"/"+str(b))
+else:
+  a=(num1*deno2)+(num2*deno1)
+  b=deno1*deno2
+  print(str(a)+"/"+str(b))

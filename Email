@@ -1,0 +1,10 @@
+Email_id=input()
+split_email=Email_id.split(".")
+name=split_email[0]
+print('Name : ',name)
+year=split_email[1][:2]
+print('year : ','20'+year)
+if 'kct' in Email_id:
+  print('kct student : yes')
+else:
+  print('kct student : no')

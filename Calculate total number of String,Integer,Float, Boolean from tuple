@@ -1,0 +1,21 @@
+
+import json
+T=("Ball",12.5,45,True,3.14,111,"Apple",56)
+def myfunc():
+  String=Integer=Float=Boolean=0
+  data=["String","Integer","Float","Boolean"]
+  for i in T:
+    if type(i)==str:
+      String+=1
+    if type(i)==int:
+      Integer+=1
+    if type(i)==float:
+      Float+=1
+    if type(i)==bool:
+      Boolean+=1
+  values=[String,Integer,Float, Boolean]
+  res=dict(zip(data,values))
+  result=json.dumps(res)
+  a=result.replace(" ","")
+  print(a)
+myfunc ()

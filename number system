@@ -1,0 +1,7 @@
+n=int(input())
+b=bin(n)
+o=oct(n)
+h=hex(n).upper()
+print("Binary Value:",b[2:])
+print("Octal Value:",o[2:])
+print("Hexadecimal Value:",h[2:])

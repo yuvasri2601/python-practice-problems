@@ -1,0 +1,13 @@
+class Swap:
+  def __init__(self,x,y):
+     self.x=x
+     self.y=y
+  def swap(self):
+     print("Before swapping: ")
+     print("x={},y={}".format(self.x,self.y))
+     self.x=self.y
+     self.y=self.x
+     print("After swapping: ")
+     print("x={},y={}".format(self.x,self.y))
+s=Swap(1,2)
+s.swap()

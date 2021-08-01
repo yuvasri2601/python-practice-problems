@@ -1,0 +1,12 @@
+class OddOrEven:
+  def __init__(self,n):
+    self.n=n
+  def check(self):
+    if(self.n%2==0):
+      print("Even")
+    else:
+      print("Odd")
+obj1=OddOrEven(3)
+obj2=OddOrEven(6)
+obj1.check()
+obj2.check()

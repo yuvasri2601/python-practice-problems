@@ -1,0 +1,12 @@
+n=int(input())
+first=0
+second=1
+res=[]
+for i in range(n):
+  res.append(first)
+  temp=first
+  first=second
+  second=temp+first
+for i in range(n+1):
+  if i not in res:
+    print(i,end=" ")

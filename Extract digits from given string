@@ -1,0 +1,4 @@
+string=input ()
+for i in string:
+  if i.isdigit():
+    print(int(i),end =" ")

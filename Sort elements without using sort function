@@ -1,0 +1,7 @@
+a=list(map(int,input().split()))
+res=[]
+for i in range(len(a)):
+  min_a=min(a)
+  res.append(min_a)
+  a.remove(min_a)
+print(res)

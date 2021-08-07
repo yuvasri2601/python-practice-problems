@@ -1,0 +1,17 @@
+n=int(input())
+matrix=[]
+min_matrix=[]
+for i in range(n):
+  c=list(map(int,input().split()))
+  matrix.append(c)
+transpose=zip(*matrix)
+for i in matrix:
+  min_matrix.append(min(i))
+for i in transpose:
+  min_matrix.append(max(i))
+for i in range(0,len(min_matrix)):
+  for j in range(i+1,len(min_matrix)):
+    if(min_matrix[i]==min_matrix[j]):
+      print("saddle point:",min_matrix[i])
+else:
+  print("No saddle point")
